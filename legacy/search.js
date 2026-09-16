@@ -1,19 +1,7 @@
-// Dead pattern: the flag check itself is commented out. The old
-// Elasticsearch query path below is unreachable but still sitting
-// in the repo, still showing up in searches for "legacy-search".
-//
-// const flagClient = require("../lib/flagClient");
-//
-// function search(query) {
-//   if (flagClient.isEnabled("search.legacyElasticQuery")) {
-//     return runLegacyElasticQuery(query);
-//   }
-//   return runCurrentSearch(query);
-// }
-//
-// function runLegacyElasticQuery(query) {
-//   // old ES 6.x query builder, kept "just in case"
-// }
+// Dead pattern removed: the flag check for search.legacyElasticQuery was
+// commented out instead of deleted. The old Elasticsearch query path below
+// was unreachable dead code, so it has been deleted along with its
+// flags.config.json entry (no live references remain).
 
 function search(query) {
   return runCurrentSearch(query);

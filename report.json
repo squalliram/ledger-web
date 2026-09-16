@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-16T18:00:39.095Z",
+  "generatedAt": "2026-09-16T18:01:13.688Z",
   "repo": "ledger-web",
   "summary": {
-    "total": 8,
+    "total": 5,
     "healthy": 1,
-    "atRisk": 7
+    "atRisk": 4
   },
   "flags": [
     {
@@ -46,36 +46,6 @@
         "overdue_removal"
       ],
       "recommendation": "Prioritize: overdue_removal"
-    },
-    {
-      "key": "search.legacyElasticQuery",
-      "owner": "search-team",
-      "location": "legacy/search.js",
-      "riskLevel": "low",
-      "findings": [
-        "dead_commented_out"
-      ],
-      "recommendation": "Safe cleanup — delete the commented block and the config entry."
-    },
-    {
-      "key": "notifications.smsFallbackDisabled",
-      "owner": null,
-      "location": "flags.config.json",
-      "riskLevel": "medium",
-      "findings": [
-        "orphaned_in_config"
-      ],
-      "recommendation": "No code references found. Confirm it's truly dead, then delete the config entry."
-    },
-    {
-      "key": "reporting.exportV3",
-      "owner": "data-platform",
-      "location": "flags.config.json",
-      "riskLevel": "medium",
-      "findings": [
-        "orphaned_in_config"
-      ],
-      "recommendation": "No code references found. Confirm it's truly dead, then delete the config entry."
     },
     {
       "key": "FEATURE_NEW_DASHBOARD_ENABLED",

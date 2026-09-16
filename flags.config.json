@@ -35,33 +35,6 @@
       "rolloutPercent": 0,
       "status": "deprecated",
       "notes": "Replaced by new verification vendor. TODO in code says remove by 2025-11-01."
-    },
-    {
-      "key": "search.legacyElasticQuery",
-      "owner": "search-team",
-      "createdDate": "2024-06-01",
-      "lastModified": "2024-11-20",
-      "rolloutPercent": 0,
-      "status": "deprecated",
-      "notes": "Old Elasticsearch query path, replaced. Check was commented out instead of deleted."
-    },
-    {
-      "key": "notifications.smsFallbackDisabled",
-      "owner": null,
-      "createdDate": "2025-05-20",
-      "lastModified": "2025-05-20",
-      "rolloutPercent": 100,
-      "status": "unknown",
-      "notes": "No code references found for this key as of last scan."
-    },
-    {
-      "key": "reporting.exportV3",
-      "owner": "data-platform",
-      "createdDate": "2025-03-11",
-      "lastModified": "2025-03-11",
-      "rolloutPercent": 100,
-      "status": "unknown",
-      "notes": "Export rewrite was shelved. Flag was never removed from config."
     }
   ]
 }
