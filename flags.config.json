@@ -1,0 +1,67 @@
+{
+  "flags": [
+    {
+      "key": "ledger.newCheckoutFlow",
+      "owner": "checkout-team",
+      "createdDate": "2026-07-02",
+      "lastModified": "2026-08-30",
+      "rolloutPercent": 40,
+      "status": "active_experiment",
+      "notes": "One-click checkout redesign, currently A/B testing conversion."
+    },
+    {
+      "key": "pricing.dynamicDiscountV2",
+      "owner": "pricing-team",
+      "createdDate": "2025-09-10",
+      "lastModified": "2025-10-18",
+      "rolloutPercent": 100,
+      "status": "fully_rolled_out",
+      "notes": "Winning variant from last year's discount experiment. Never cleaned up."
+    },
+    {
+      "key": "payments.legacyRefundPath",
+      "owner": "payments-team",
+      "createdDate": "2025-11-04",
+      "lastModified": "2026-06-12",
+      "rolloutPercent": 60,
+      "status": "active_experiment",
+      "notes": "Routing a subset of refunds through the new processor while we validate settlement times."
+    },
+    {
+      "key": "kyc.oldVerificationFlow",
+      "owner": null,
+      "createdDate": "2024-12-01",
+      "lastModified": "2025-01-15",
+      "rolloutPercent": 0,
+      "status": "deprecated",
+      "notes": "Replaced by new verification vendor. TODO in code says remove by 2025-11-01."
+    },
+    {
+      "key": "search.legacyElasticQuery",
+      "owner": "search-team",
+      "createdDate": "2024-06-01",
+      "lastModified": "2024-11-20",
+      "rolloutPercent": 0,
+      "status": "deprecated",
+      "notes": "Old Elasticsearch query path, replaced. Check was commented out instead of deleted."
+    },
+    {
+      "key": "notifications.smsFallbackDisabled",
+      "owner": null,
+      "createdDate": "2025-05-20",
+      "lastModified": "2025-05-20",
+      "rolloutPercent": 100,
+      "status": "unknown",
+      "notes": "No code references found for this key as of last scan."
+    },
+    {
+      "key": "reporting.exportV3",
+      "owner": "data-platform",
+      "createdDate": "2025-03-11",
+      "lastModified": "2025-03-11",
+      "rolloutPercent": 100,
+      "status": "unknown",
+      "notes": "Export rewrite was shelved. Flag was never removed from config."
+    }
+  ]
+}

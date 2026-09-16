@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-09-16T18:00:39.095Z",
+  "repo": "ledger-web",
+  "summary": {
+    "total": 8,
+    "healthy": 1,
+    "atRisk": 7
+  },
+  "flags": [
+    {
+      "key": "ledger.newCheckoutFlow",
+      "owner": "checkout-team",
+      "location": "routes/checkout.js",
+      "riskLevel": "healthy",
+      "findings": [
+        "none"
+      ],
+      "recommendation": "No action needed — owned, fallback present, actively used."
+    },
+    {
+      "key": "pricing.dynamicDiscountV2",
+      "owner": "pricing-team",
+      "location": "services/pricing.js",
+      "riskLevel": "medium",
+      "findings": [
+        "stale_at_full_rollout"
+      ],
+      "recommendation": "Schedule cleanup: stale_at_full_rollout"
+    },
+    {
+      "key": "payments.legacyRefundPath",
+      "owner": "payments-team",
+      "location": "services/refunds.js",
+      "riskLevel": "high",
+      "findings": [
+        "no_fallback"
+      ],
+      "recommendation": "Prioritize: no_fallback"
+    },
+    {
+      "key": "kyc.oldVerificationFlow",
+      "owner": null,
+      "location": "services/kyc.js",
+      "riskLevel": "high",
+      "findings": [
+        "overdue_removal"
+      ],
+      "recommendation": "Prioritize: overdue_removal"
+    },
+    {
+      "key": "search.legacyElasticQuery",
+      "owner": "search-team",
+      "location": "legacy/search.js",
+      "riskLevel": "low",
+      "findings": [
+        "dead_commented_out"
+      ],
+      "recommendation": "Safe cleanup — delete the commented block and the config entry."
+    },
+    {
+      "key": "notifications.smsFallbackDisabled",
+      "owner": null,
+      "location": "flags.config.json",
+      "riskLevel": "medium",
+      "findings": [
+        "orphaned_in_config"
+      ],
+      "recommendation": "No code references found. Confirm it's truly dead, then delete the config entry."
+    },
+    {
+      "key": "reporting.exportV3",
+      "owner": "data-platform",
+      "location": "flags.config.json",
+      "riskLevel": "medium",
+      "findings": [
+        "orphaned_in_config"
+      ],
+      "recommendation": "No code references found. Confirm it's truly dead, then delete the config entry."
+    },
+    {
+      "key": "FEATURE_NEW_DASHBOARD_ENABLED",
+      "owner": null,
+      "location": "services/dashboard.js",
+      "riskLevel": "high",
+      "findings": [
+        "hardcoded_bypasses_governance"
+      ],
+      "recommendation": "Move behind flags.config.json with an owner and a real kill switch."
+    }
+  ]
+}

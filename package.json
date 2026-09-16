@@ -1,0 +1,14 @@
+{
+  "name": "ledger-web",
+  "version": "0.1.0",
+  "description": "Seeded fixture app for the Flag Guardian MVP — a small fintech-style Express app with deliberately messy feature-flag patterns.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "scan": "node tools/flag-guardian.js",
+    "test": "node tests/basic.test.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
